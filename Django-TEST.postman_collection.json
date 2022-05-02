@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "79e74898-969a-416e-b6b0-0806d9c2d6e4",
+		"name": "Django-TEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users_lessThanDate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"table\": \"Users\",\r\n\t\"filter\": [{\r\n\t\t\"field\": \"created\",\r\n\t\t\"filter_function\": \"lessThanDate\",\r\n\t\t\"filter_input\": \"2022-05-01\"\r\n\t}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/filter/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"filter",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users_like_function",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"table\": \"Users\",\r\n\t\"filter\": [{\r\n\t\t\"field\": \"username\",\r\n\t\t\"filter_function\": \"like\",\r\n\t\t\"filter_input\": \"j\"\r\n\t}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/filter/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"filter",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users_biggerThanDate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"table\": \"Users\",\r\n\t\"filter\": [{\r\n\t\t\"field\": \"created\",\r\n\t\t\"filter_function\": \"biggerThanDate\",\r\n\t\t\"filter_input\": \"2022-04-30\"\r\n\t}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/filter/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"filter",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Groups_groupsWithLessID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"table\": \"Groups\",\r\n\t\"filter\": [{\r\n\t\t\"field\": \"id\",\r\n\t\t\"filter_function\": \"groupsWithLessID\",\r\n\t\t\"filter_input\": 20\r\n\t}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/filter/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"filter",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Groups_like_function",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"table\": \"Groups\",\r\n\t\"filter\": [{\r\n\t\t\"field\": \"name\",\r\n\t\t\"filter_function\": \"like\",\r\n\t\t\"filter_input\": \"2\"\r\n\t}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/filter/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"filter",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Groups_like_function",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"table\": \"Groups\",\r\n\t\"filter\": [{\r\n\t\t\"field\": \"description\",\r\n\t\t\"filter_function\": \"like\",\r\n\t\t\"filter_input\": \"2\"\r\n\t}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/filter/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"filter",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FAILED REQUEST",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"table\": \"Groups\",\r\n\t\"filter\": [{\r\n\t\t\"field\": \"descriptions\",\r\n\t\t\"filter_function\": \"like\",\r\n\t\t\"filter_input\": \"2\"\r\n\t}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/filter/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"filter",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Groups_groupsWithBiggerID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"table\": \"Groups\",\r\n\t\"filter\": [{\r\n\t\t\"field\": \"id\",\r\n\t\t\"filter_function\": \"groupsWithBiggerID\",\r\n\t\t\"filter_input\": \"20\"\r\n\t}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/filter/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"filter",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users_usersInGroup",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"table\": \"Users\",\r\n\t\"filter\": [{\r\n\t\t\"field\": \"group\",\r\n\t\t\"filter_function\": \"usersInGroup\",\r\n\t\t\"filter_input\": 22\r\n\t}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/filter/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"filter",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
